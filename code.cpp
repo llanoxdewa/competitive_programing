@@ -21,19 +21,14 @@ template<typename V> void _print(vector<V> arg){cerr << "[ ";for(V bil : arg) ce
 template<typename K,typename V> void _print(map<K,V> arg){cerr << "{ ";for(auto &val : arg) cerr << val.first << " => " << val.second << " | ";cerr << "}";}
 template<typename A> void _print(A args[],int len){cerr << "[ ";for(int i = 0;i < len;i++)cerr << args[i] << " | ";cerr << "]";}
 // definition of data type
+#define ll long long
+#define ull unsigned long long
 
-
-int komposit(int bil){
-    for(int i = 2;i < bil;i++)
-        if(bil % i == 0)
-            return 1;
-    return 0;
-}
-
-// k dari 1 - 5
 void solve(){
-
+	// write your solution here
 }
+
+
 
 int main() {
     ios_base::sync_with_stdio(false);

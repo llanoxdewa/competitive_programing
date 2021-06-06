@@ -3,9 +3,9 @@ import sys
 import time
 
 try:
-	pilihan = sys.argv[1];
+	pilihan = sys.argv[1]
 except:
-	pilihan = False;
+	pilihan = False
 
 i,n= 1,1
 if(pilihan == "y"):
@@ -18,13 +18,14 @@ if(pilihan == "y"):
 		start = time.time()
 		os.system(f"code < case/{f}")
 		end = time.time()	
-		print(f'done in {end - start}s')	
+		print('done in {t:03f}s'.format(t = end - start))
 		print("-------------")
 		i += 1
 
 elif(pilihan == "o"):
 	for case in os.listdir('./case'):
 		os.system(f"code < case/{case} > out/out{n}")
+		print(f"output write to out{n}")	
 		n+=1	
 
 else:
@@ -33,5 +34,7 @@ else:
 		os.system(f"code < case/{f}")
 		print("-------------")
 		i += 1
-print(f"testing {i - 1} case done")
+
+if(pilihan != 'o'):
+	print(f"testing {i - 1} case done")
 
