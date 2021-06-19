@@ -7,3 +7,7 @@ for fin in os.listdir("."):
 os.chdir("../out")
 for fout in os.listdir("."):
     os.system(f'del {fout}')
+
+os.chdir('../expected')
+for fex in os.listdir("."):
+    os.system(f'del {fex}')

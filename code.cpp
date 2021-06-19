@@ -1,41 +1,42 @@
-#include <sstream>
-#include <vector>
 #include <iostream>
-#include <string>
-#include <map>
-#include <algorithm>
+#include <vector>
 #include <math.h>
+#include <algorithm>
 #include <set>
+#include <sstream>
 using namespace std;
 
-// debungging
-#ifndef ONLINE_JUDGE
-#define debug(x) cerr << #x << " -> ";_print(x);cerr << endl;
-#define debugArr(x,y) cerr << #x << " -> ";_print(x,y);cerr << endl;
-#else
-#define debug(x)
-#define debugArr(x,y)
-#endif
-template<typename T> void _print(T arg){cerr << arg << " ";}
-template<typename V> void _print(vector<V> arg){cerr << "[ ";for(V bil : arg) cerr << bil << " | ";cerr << "]";}
-template<typename K,typename V> void _print(map<K,V> arg){cerr << "{ ";for(auto &val : arg) cerr << val.first << " => " << val.second << " | ";cerr << "}";}
-template<typename A> void _print(A args[],int len){cerr << "[ ";for(int i = 0;i < len;i++)cerr << args[i] << " | ";cerr << "]";}
-// definition of data type
+// debugging
+// #include "testing_unit/debug.h"
+
+
+// shorcut data type
+#define endl "\n"
 #define ll long long
 #define ull unsigned long long
 
+
 void solve(){
-	// write your solution here
+    int x1,x2;
+    int v1,v2;
+    cin >> x1 >> v1 >> x2 >> v2;
+    if(v1 < v2){
+        cout << "NO" << endl;
+        return;
+    }
+    while(x1 < x2){
+        x1 += v1;
+        x2 += v2;
+    }
+    cout << ((x1 == x2)? "YES" : "NO") << endl;
 }
 
-
-
-int main() {
+int main(){
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    cin.tie(0);
 	#ifndef ONLINE_JUDGE
 		freopen("dbg.txt","w",stderr);
    	#endif
-	solve();
+    solve();
 	return 0;
 }

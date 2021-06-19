@@ -1,6 +1,3 @@
-#include <vector>
-
-using namespace std;
 
 void sort(vector<int> &vec,bool reverse = false){
 	int index = 0;
