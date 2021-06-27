@@ -1,0 +1,30 @@
+RUNING CASE#2
+==============================
+OUTPUT
+------------------------------
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+------------------------------
+EXPECTED
+------------------------------
+NO
+YES
+YES
+YES
+YES
+NO
+YES
+YES
+NO
+NO
+------------------------------
+testing code done in 2s
+WARNING: time limit 1s !!!
