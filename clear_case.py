@@ -11,3 +11,8 @@ for fout in os.listdir("."):
 os.chdir('../expected')
 for fex in os.listdir("."):
     os.system(f'del {fex}')
+
+
+os.chdir('../dif_file')
+for diffile in os.listdir("."):
+    os.system(f'del {diffile}')

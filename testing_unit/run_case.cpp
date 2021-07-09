@@ -15,15 +15,12 @@ int main(int arg,char* argv[]){
     auto t_start = chrono::high_resolution_clock::now();
     system(compare.c_str());
     auto t_end = chrono::high_resolution_clock::now();
-    int elapsed_time_ms = chrono::duration<double, milli>(t_end-t_start).count();
+    int elapsed_time_ms = chrono::duration<double, milli>(t_end-t_start).count() / 32;
     cout << "RUNING CASE#"+sample << endl;
     cout << "==============================" << endl;
-    cout << "OUTPUT" << endl;
-    cout << "------------------------------" << endl;
+    cout << "OUTPUT:" << endl;
     system(outcommand.c_str());
-    cout << "------------------------------" << endl;
-    cout << "EXPECTED" << endl;
-    cout << "------------------------------" << endl;
+    cout << "EXPECTED:" << endl;
     system(expcommand.c_str());
     cout << "------------------------------" << endl;
     cout << "testing code done in ";

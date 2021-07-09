@@ -1,17 +1,8 @@
-#ifndef iostream
-#include <iostream>
-#include <map>
-#include <vector>
-#endif
-
 // template debug
-#ifndef ONLINE_JUDGE
+#define LANO_DEBUG
 #define debug(x) cerr << #x << " -> ";_print(x);cerr << endl;
 #define debugArr(x,y) cerr << #x << " -> ";_print(x,y);cerr << endl;
-#else
-#define debug(x)
-#define debugArr(x,y)
-#endif
+
 // debug value
 template<typename T> void _print(T arg){cerr << arg << " ";}
 // debug vector

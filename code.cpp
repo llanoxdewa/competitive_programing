@@ -3,30 +3,39 @@
 #include <math.h>
 #include <algorithm>
 #include <set>
-#include <sstream>
+#include <string>
 #include <map>
+
 using namespace std;
 
 // debugging
-// #include "testing_unit/debug.h"
-
-
-// shorcut data type
-#define endl "\n"
+//#include "testing_unit/debug.h"
+// shorcut
 #define ll long long
 #define ull unsigned long long
-
-
+#define print(val) cout << val << '\n';
+#define all(arr) arr.begin(),arr.end()
 
 void solve(){
-    // codewars in kece
+
 }
+
 int main(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
-	#ifndef ONLINE_JUDGE
+	ios_base::sync_with_stdio(false);
+	cin.tie(nullptr);
+	#ifdef LANO_DEBUG
+		cout << "DEBUG IS ON" << endl;
 		freopen("dbg.txt","w",stderr);
-   	#endif
-    solve();
+	#endif
+	solve();
 	return 0;
 }
+
+
+
+
+
+
+
+
+
