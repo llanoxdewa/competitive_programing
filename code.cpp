@@ -5,7 +5,7 @@
 #include <set>
 #include <string>
 #include <map>
-
+#include <valarray>
 using namespace std;
 
 // debugging
@@ -15,25 +15,24 @@ using namespace std;
 #define ull unsigned long long
 #define print(val) cout << val << '\n';
 #define all(arr) arr.begin(),arr.end()
+#define sz(arr) (int)arr.size()
+#define scan(arr,num) for(int i = 0;i<num;i++)cin>>arr[i]; 
 
-void solve(){
 
+
+void solution(){
+	// :)
 }
 
 int main(){
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
 	#ifdef LANO_DEBUG
-		cout << "DEBUG IS ON" << endl;
 		freopen("dbg.txt","w",stderr);
 	#endif
-	solve();
+	solution();	
 	return 0;
 }
-
-
-
-
 
 
 

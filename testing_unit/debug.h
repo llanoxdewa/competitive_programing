@@ -3,6 +3,10 @@
 #define debug(x) cerr << #x << " -> ";_print(x);cerr << endl;
 #define debugArr(x,y) cerr << #x << " -> ";_print(x,y);cerr << endl;
 
+// debug all
+template<typename... Args>void _print(Args... args){
+	(cerr << ... << args);
+}
 // debug value
 template<typename T> void _print(T arg){cerr << arg << " ";}
 // debug vector
